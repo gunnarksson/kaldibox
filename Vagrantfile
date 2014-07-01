@@ -12,11 +12,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
     v.vm.provider "virtualbox" do |v|
-      v.customize ["modifyvm", :id, "--memory", "2048"] # in MB
-      v.customize ["modifyvm", :id, "--cpus", "4"]
+      v.customize ["modifyvm", :id, "--memory", "4096"] # in MB
+      v.customize ["modifyvm", :id, "--cpus", "8"]
     end
 
     v.vm.synced_folder "kaldi", KALDI_PREFIX, create: true
+    v.vm.network :private_network, ip: "192.168.88.88"
 
     v.vm.provision "shell", inline: <<-EOF
       su -l vagrant -c 'cp /vagrant/scripts/user.sh ~/.bash_profile'

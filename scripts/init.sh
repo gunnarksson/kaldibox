@@ -43,6 +43,11 @@ fi
 
 chown -R vagrant:vagrant $KALDI_PREFIX
 
+CUSTOM=/vagrant/experiment/init.sh
+if [ -f $CUSTOM ]; then
+  . $CUSTOM
+fi
+
 # Install Docker
 # [ -e /usr/lib/apt/methods/https ] || {
 #   apt-get update

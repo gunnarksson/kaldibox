@@ -7,6 +7,7 @@
 Kaldi is a fantastic project. However, it has been created and has evolved in an academic setting. While the code quality is impressive (thanks to strict guidelines) in the C++ core codebase, other areas of the project may prove difficult to work with for people new to Kaldi.
 
 These include:
+
 - setting up a dev environment
 - using your own data (currently depends on thousands of lines of Bash/Perl scripts)
 - deploying Kaldi to production
@@ -76,6 +77,9 @@ There are a few more things commonly done, sometimes the frame energy is appende
 
 ### PDF
 probability distribution/density function. usually GMMs
+
+### VTLN
+vocal tract length normalization.
 
 ## TODO
 - write a step-by-step example of using own data

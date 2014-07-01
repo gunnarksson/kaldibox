@@ -1,2 +1,4 @@
-.vagrant
+/bin
+/.vagrant
 /kaldi
+/experiment
