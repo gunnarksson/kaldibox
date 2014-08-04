@@ -17,6 +17,7 @@ fi
 # aliases
 alias ll='ls -Alh --color'
 alias cdkaldi='cd $KALDI_HOME'
+alias cdexperiment='cd /vagrant/experiment'
 
 CUSTOM=/vagrant/experiment/user.sh
 if [ -f $CUSTOM ]; then

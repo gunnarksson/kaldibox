@@ -18,7 +18,7 @@ These include:
 ```bash
 vagrant up # run VM
 vagrant ssh # log into VM
-cdkalditrunk # go to Kaldi directory
+cdkaldi # go to Kaldi directory
 ./build.sh # start build... feel free to grab a coffee and go take a nap
 ```
 

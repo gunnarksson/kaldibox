@@ -17,7 +17,8 @@ cd $KALDI_PREFIX
 # Install required packages
 apt-get update
 apt-get install -y build-essential patch make automake subversion \
-                   libtool zlib1g-dev gawk wget gfortran
+                   libtool zlib1g-dev gawk wget gfortran \
+                   graphviz ghostscript
 
 # Fetch code
 if [ ! -e $KALDI_REPO ]; then
